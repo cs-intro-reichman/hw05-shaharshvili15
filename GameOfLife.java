@@ -168,9 +168,10 @@ public class GameOfLife {
 	public static void print(int[][] arr) {
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[0].length; j++) {
-				System.out.printf("%4s", arr[i][j]);
+				System.out.print(arr[i][j]);
 			}
-			System.out.println(); }
+			System.out.println();
+		}
 	}
 		
     // Displays the board. Living and dead cells are represented by black and white squares, respectively.

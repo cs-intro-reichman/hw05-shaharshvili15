@@ -75,12 +75,12 @@ public class GameOfLife {
 			String currentRow = in.readLine();
 			if(currentRow != "" && currentRow !=null){
 				char[] bla = currentRow.toCharArray();
-				for (int j = 1 ; j<bla.length ; j++){
+				for (int j = 0 ; j<bla.length ; j++){
 					if(bla[j] == '.'){
-						board[i][j] = 0;
+						board[i][j+1] = 0;
 					}
 					else{
-						board[i][j] = 1;
+						board[i][j+1] = 1;
 					}
 				}
 			}
